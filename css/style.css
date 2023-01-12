@@ -1,0 +1,647 @@
+:root {
+    --color-primary: rgb(36, 195, 134);
+    --color-primary-light: #a9ff9c;
+    --color-secondary: #10aca4;
+    --background-color: #f8f8f8;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Globales */
+
+body {
+    /*font-family: arial;*/
+    font-family: var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SECCION DEL HEADER QUE INCLUYE LA PARTE DEL NAV */
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+header nav {
+    /*background-color: var(--color-primary);*/
+/*    background-image: linear-gradient(135deg, rgb(12, 139, 139), rgb(7, 97, 102), rgb(110, 6, 171), rgb(7, 97, 102), rgb(12, 139, 139));*/
+/*    background-image: linear-gradient(135deg, rgb(12, 82, 139), rgb(11, 86, 137), rgb(16, 97, 218), rgb(7, 67, 102), rgb(12, 101, 139));*/
+    background-image: linear-gradient(135deg,rgb(11, 86, 137), rgb(12, 57, 80), rgb(1, 19, 29), #1e5341,rgb(11, 86, 137),rgb(7, 67, 102),rgb(4, 88, 57), rgb(12, 101, 139), rgb(12, 57, 80), rgb(1, 19, 29),rgb(11, 86, 137));
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+/*nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}*/
+
+nav div {
+    align-items: center;
+}
+
+ul {
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+ /*   justify-content: center;
+    align-items: center;*/
+    gap: 40px;
+    /*margin-top: 45px;*/
+}
+
+ul a {
+    color: rgb(255, 255, 255);
+   /* color: #fff; */
+    text-decoration: none;
+}
+
+.sesion {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sesion a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.menu a:hover {
+    color: rgb(255, 242, 0);
+  /*  text-decoration: none;
+    display: flex;*/
+}
+
+.sesion a:hover {
+    color: rgb(0, 255, 255);
+  /*  text-decoration: none;
+    display: flex;*/
+}
+
+/* SECCION DE PRESENTACION DEL PRODUCTO */
+
+.presentacion {
+
+    color: white;
+    display: grid;
+    grid-template-columns: .7fr 1.3fr; 
+  /*  background: #164473;*/
+    background-image: url("../assets/textura2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;      
+    /*position: relative;*/
+}
+
+
+
+.title {
+  /*  display: flex;
+    flex-direction: column;*/
+ /*   display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+  /*  position: relative;*/
+}
+
+.subtitle {
+    /* display: flex;
+     flex-direction: column;*/
+ /*    display: grid;
+     grid-template-columns: 1fr 1fr;*/
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding-top: 20px;
+     font-size: 22px;
+   /*  position: relative;*/
+}
+
+.logo-shop img {
+    width: 180px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.robalon img {
+  /*  display: flex;
+    justify-content: center;*/
+    width: 85%;
+    height: 750px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.robalon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-shop {
+    display: flex;
+    justify-content: center;
+}
+
+.promos-cliente {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn {
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--color-secondary);
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /*   display: grid;
+    grid-template-columns: 1fr 1fr;*/
+}
+
+.input-container > .btn {
+    /* position: absolute;*/
+    /*  top: 0.5px;*/
+    right: 70px;
+    height: 36px;
+    /*border-radius: 0 10px 10px 0;*/
+    border-radius: 10px;
+}
+
+.field-text {
+    width: 55%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 1rem;
+    font-family: arial;
+    transition: all 0.3s ease;
+}
+
+.correo-promos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.fishers-men {
+    display: flex;
+    justify-content: center;
+}
+
+.fishers-men img {
+    width: 90px;
+    margin-top: 10px;
+}
+
+/* EMPRESA - ¿QUIENES SOMOS? */
+
+#empresa {
+    background-image: url("../assets/fondo5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* background-color: rgba(211, 196, 24, 0.44);*/
+    padding-bottom: 25px;
+}
+
+.empresa-inicio {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    padding: 30px;  
+}
+
+.empresa-somos {
+    text-align: center;
+    color: rgb(212, 212, 35);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.empresa-pasion {
+    text-align: center;
+    color: rgb(4, 100, 108);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.pasion {
+    font-size: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: center;
+}
+
+.robalo img {
+    width: 450px;
+    border: 8px solid rgb(16, 139, 150);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.robalo:hover {
+    scale: 1.01;
+}
+
+.recuerdos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: right;
+    margin-left: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.familia img {
+    width: 270px;
+    height: 350px;
+    border: 8px solid rgb(16, 139, 150);
+    border-radius: 20px;
+}
+
+.familia:hover {
+    scale: 1.01;
+}
+
+.robalo-bonito img {
+    width: 270px;
+    height: 350px;
+    border: 8px solid rgb(16, 139, 150);
+    border-radius: 20px;
+}
+
+.robalo-bonito:hover {
+    scale: 1.01;
+}
+
+.robalo-super img {
+    width: 270px;
+    height: 350px;
+    border: 8px solid rgb(16, 139, 150);
+    border-radius: 20px;
+}
+
+.robalo-super:hover {
+    scale: 1.01;
+}
+
+.trofeo img {
+    width: 270px;
+    height: 350px;
+    border: 8px solid rgb(16, 139, 150);
+    border-radius: 20px;
+}
+
+.trofeo:hover {
+    scale: 1.01;
+}
+
+.bass-hunter img {
+    width: 600px;
+    border: 8px solid rgb(16, 139, 150);
+    border-radius: 20px;
+}
+
+.bass-hunter:hover {
+    scale: 1.01;
+}
+
+.bass-hunter {
+    display: flex;
+    justify-content: center;
+}
+
+.arma-secreta {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Catalogo de Nuevos Productos */
+
+#productos {
+    /* background-color: rgba(58, 255, 179, 0.243);*/
+    background-image: url("../assets/fondo14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgba(211, 196, 24, 0.44);*/
+    padding-bottom: 25px;
+    padding-top: 25px;  
+}
+
+.title-up {
+    /* padding-top: 30px;*/
+    /* text-align: center;*/
+    /* color: white;*/
+    /* font-size: 25px;*/
+
+    margin-top: 20px;
+    margin-left: 550px;
+    margin-right: 550px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* display: inline;*/
+    /* text-transform: uppercase;*/
+    /* padding: 5px 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline;*/
+}
+
+.container-productos h3 {
+    display: flex;
+    justify-content: center;  
+}
+
+.title-productos {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 550px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    /* text-transform: uppercase;*/
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+/******* Productos Nuevos *******/
+
+/*#productos {
+    display: inline;
+    display: flex;
+    justify-content: center;
+}*/
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    padding: 1rem 0;
+    margin: 80px;
+}
+
+.card {
+    background-color: rgb(206, 189, 12);
+    border-radius: 10px;
+    /*padding: 10px, 10px;*/
+   /*padding: 2rem 1rem;*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /*justify-content: space-between;*/
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;  
+}
+
+.card .card-carrete img {
+    width: 200px;
+    padding-top: 20px;
+}
+
+.card .card-senuelo img {
+    width: 200px;
+    padding-top: 20px;
+}
+
+.card .card-vara img {
+    width: 200px;
+    padding-top: 20px;
+}
+
+.card:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    color: #fff;
+    scale: 1.05;
+}
+
+.card .articulo {
+    color: rgb(8, 85, 136);
+    font-size: 20px;
+}
+
+.card .descripcion-carrete {
+    font-size: 14px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.card .descripcion-senuelo {
+    font-size: 14px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 30px;
+}
+
+.card .carrete {
+    margin-bottom: 20px;
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.card .senuelo {
+    margin-bottom: 20px;
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.card .vara {
+    margin-bottom: 20px;
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.card .precio {
+color: rgb(26, 38, 146);
+font-size: 22px;
+margin-bottom: 20px;
+}
+
+/*.container-adicionales {
+    background-image: url("../assets/mercury1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-color: rgba(211, 196, 24, 0.44);
+   padding-bottom: 700px;
+    text-align: center;
+}*/
+
+/*.app-content .texto-up {
+    color: white;
+    text-align: center;
+}*/
+
+/* Seccion Informacion Adicional */
+
+/*.app-content {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: right;*/
+
+.container-adicionales {
+    padding: 40px;
+}
+
+
+.container-adicionales {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.texto-up {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(235, 231, 14);
+    margin-bottom: 30px;
+}
+
+.texto {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.texto-app {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.app-img img {
+    width: 120px;
+}
+
+
+.btn-app {
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+}       
+
+
+
+
+/*.app-container > .btn-app {
+    /* position: absolute;*/
+   /*  top: 0.5px;*/
+/*     right: 70px;
+     height: 36px;*/
+     /*border-radius: 0 10px 10px 0;
+     border-radius: 10px;
+}*/
+
+.btn-app:hover {
+    background-color: #fff;
+    color: var(--color-secondary);
+}
+
+
+/*.app-imp img {
+    justify-content: center;
+}*/
+#redes-sociales {
+    background-image: url("../assets/mercury.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* background-color: rgba(211, 196, 24, 0.44);*/
+    height: 550px;
+}
