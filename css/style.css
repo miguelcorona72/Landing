@@ -29,7 +29,7 @@ body {
 }
 
 .logo img {
-    height: 60px;
+    height: 50px;
 }
 
 .logo {
@@ -569,18 +569,13 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 justify-content: right;*/
 
 .container-adicionales {
-    padding: 40px;
-}
-
-
-.container-adicionales {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(32, 179, 166);
 }
 
 
 .texto-up {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     color: rgb(235, 231, 14);
     margin-bottom: 30px;
 }
@@ -592,34 +587,64 @@ justify-content: right;*/
     margin: 20px;
 }
 
-.texto-app {
-    text-align: center;
-    color: white;
+.texto-bajar h2 {
+    display: inline;
+    justify-content: center;
     font-size: 20px;
 }
 
+.texto-bajar {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-baja {
+    color: rgb(255, 255, 255);
+}
+
+.texto-app {
+    text-align: center;
+    color: rgb(245, 16, 16);
+
+}
+
 .app-img img {
-    width: 120px;
+    width: 180px;
 }
 
 
 .btn-app {
-    background-color: var(--color-secondary);
+    background-color: rgb(37, 36, 117);
     color: #fff;
     padding: 0.5rem 1rem;
-    border: none;
+    border: solid;
+    border-radius: 10px 10px;
     cursor: pointer;
     font-family: var(--font-family);
     font-size: 15px;
     text-transform: uppercase;
+    font-style: oblique;
     font-weight: 600;
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 30px;
+}   
 
-}       
+.app-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
 
-
-
-
+.app-content {
+    background-image: linear-gradient(135deg,rgb(11, 86, 137), rgb(12, 57, 80), rgb(1, 19, 29), #1e5341,rgb(11, 86, 137),rgb(7, 67, 102),rgb(4, 88, 57), rgb(12, 101, 139), rgb(12, 57, 80), rgb(1, 19, 29),rgb(11, 86, 137));
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    padding: 40px 0;
+}
 /*.app-container > .btn-app {
     /* position: absolute;*/
    /*  top: 0.5px;*/
@@ -643,5 +668,10 @@ justify-content: right;*/
     background-repeat: no-repeat;
     background-size: cover;
    /* background-color: rgba(211, 196, 24, 0.44);*/
-    height: 550px;
+    height: 680px;
+}
+
+.redes-logo {
+    width: 200px;
+    margin: 70px;
 }
