@@ -752,3 +752,147 @@ justify-content: right;*/
     margin-left: 55px;
     margin-right: 55px;
 }
+
+/*responsive design*/
+@media screen and (min-width:360px) and (max-width:880px){
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.title {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.subtitle {
+    font-size: 15px;
+}
+
+.promos-cliente {
+    font-size: 14px;
+}
+
+.logo-shop img {
+    width: 120px;
+    height: 100px;
+}
+
+.fishers-men img {
+    width: 60px;
+    height: 40px;
+}
+
+.robalon img {
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+
+.empresa-inicio {
+    display: inline;
+/*    grid-template-columns: 1fr;*/
+    padding-top: 20px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.empresa-somos {
+    text-align: center;
+    color: rgb(212, 212, 35);
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+.empresa-pasion {
+    text-align: center;
+    color: rgb(4, 100, 108);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pasion {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: center;
+}
+
+.pasion-logo img {
+    width: 150px;
+    height: 155px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.robalo {
+    display: flex;
+    justify-content: center;
+}
+.robalo img {
+    width: 340px;
+    height: 340px;
+ 
+
+}
+
+.recuerdos {
+    display: inline;
+}
+
+.familia img {
+    margin-top: 10px;
+}
+
+.robalo-bonito img {
+    margin-top: 30px;
+}
+
+.robalo-super img {
+    margin-top: 30px;
+}
+
+.trofeo img {
+    margin-top: 30px;
+}
+
+.bass-hunter img {
+    width: 380px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.title-up {
+    margin-top: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+    font-size: 20px;
+
+}
+
+.title-productos {
+    margin-top: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+    font-size: 20px;
+}
+
+.productos-container {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+}
