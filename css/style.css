@@ -398,7 +398,7 @@ ul a {
 
 #productos {
     /* background-color: rgba(58, 255, 179, 0.243);*/
-    background-image: url("../assets/fondo14.png");
+    background-image: url("../assets/fondo10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: rgba(211, 196, 24, 0.44);*/
@@ -451,10 +451,6 @@ ul a {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
-
-
-
-/******* Productos Nuevos *******/
 
 /*#productos {
     display: inline;
