@@ -1,7 +1,7 @@
 :root {
     --color-primary: rgb(36, 195, 134);
     --color-primary-light: #a9ff9c;
-    --color-secondary: #10aca4;
+    --color-secondary: #097e78;
     --background-color: #f8f8f8;
 
     --font-family: 'Poppins', sans-serif;
@@ -290,11 +290,23 @@ ul a {
 }
 
 .pasion {
+    font-family: sans-serif;
     font-size: 20px;
     margin-left: 55px;
     margin-right: 55px;
     text-align: center;
 }
+
+.pasion-pesca {
+    width: 200px;
+    margin: 40px;
+}
+
+.pasion-logo {
+    display: flex;
+    justify-content: center;
+}
+
 
 .robalo img {
     width: 450px;
@@ -614,7 +626,7 @@ justify-content: right;*/
 
 
 .btn-app {
-    background-color: rgb(37, 36, 117);
+    background-color: #063044;
     color: #fff;
     padding: 0.5rem 1rem;
     border: solid;
@@ -655,8 +667,8 @@ justify-content: right;*/
 }*/
 
 .btn-app:hover {
-    background-color: #fff;
-    color: var(--color-secondary);
+    background-color: rgb(203, 200, 16);
+    color: #063044;
 }
 
 
@@ -664,14 +676,83 @@ justify-content: right;*/
     justify-content: center;
 }*/
 #redes-sociales {
-    background-image: url("../assets/mercury.png");
+ /*   background-image: url("../assets/mercury.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
    /* background-color: rgba(211, 196, 24, 0.44);*/
-    height: 680px;
+   background-color: black;
+    height: 250px;
+    font-family: var(--font-family);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+
 }
 
-.redes-logo {
-    width: 200px;
-    margin: 70px;
+.container-redes a:hover {
+    color: rgb(20, 94, 184);
+}
+
+.logo-redes img {
+    width: 150px;
+}
+
+.compania ul {
+    display: inline;
+    
+}
+
+.comunidades ul {
+    display: inline;
+}
+
+.enlaces ul {
+    display: inline;
+}
+/*.container-redes {
+    font-family: var(--font-family);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 60px;
+
+}*/
+.titulos-final {
+    color: grey;
+}
+
+.nav-network ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.btn-4 {
+    background-color: rgb(9, 97, 141);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-4:hover {
+    background-color: #fff;
+    color: rgb(10, 102, 177);
+}
+
+.btn-circle {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-network ul {
+    margin-left: 55px;
+    margin-right: 55px;
 }
