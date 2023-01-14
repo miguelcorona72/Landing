@@ -633,24 +633,35 @@ justify-content: right;*/
 
 
 .btn-app {
+    display: block;
+    width: 150px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    border-radius: 10px 10px;
     background-color: #063044;
     color: #fff;
     padding: 0.5rem 1rem;
     border: solid;
-    border-radius: 10px 10px;
     cursor: pointer;
-    font-family: var(--font-family);
-    font-size: 15px;
-    text-transform: uppercase;
     font-style: oblique;
-    font-weight: 600;
     transition: all 0.3s ease;
+    margin-top: 30px;
+      /* font-weight: 600;*/
+    /*    text-transform: uppercase;*/
+   /* justify-content: center;
+   /* margin-left: 600px;
+    margin-right: 600px;*/
+}   
+
+.app-btn {
     display: flex;
     justify-content: center;
-    margin-left: 600px;
-    margin-right: 600px;
-    margin-top: 30px;
-}   
+}
+
+.btn-app:hover {
+    background-color: rgb(203, 200, 16);
+    color: #063044;
+}
 
 .app-img {
     display: flex;
@@ -673,10 +684,6 @@ justify-content: right;*/
      border-radius: 10px;
 }*/
 
-.btn-app:hover {
-    background-color: rgb(203, 200, 16);
-    color: #063044;
-}
 
 
 /*.app-imp img {
@@ -879,10 +886,15 @@ justify-content: right;*/
     margin-top: 30px;
 }
 
+.container-productos {
+
+    margin: 0px;
+}
+
 .title-up {
-    margin-top: 20px;
+   /* margin-top: 20px;
     margin-left: 140px;
-    margin-right: 140px;
+    margin-right: 140px;*/
     font-size: 20px;
 
 }
@@ -952,6 +964,56 @@ justify-content: right;*/
 
 .card .articulo {
     font-size: 18px;
+}
+
+
+
+.texto-up {
+    font-size: 25px;
+}
+
+.texto {
+    font-size: 18px;
+}
+
+.texto-baja {
+    font-size: 16px;
+}
+
+.texto-app {
+    font-size: 16px;
+
+}
+
+.btn-app {
+    display: block;
+    width: 150px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    border-radius: 10px 10px;
+    background-color: #063044;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: solid;
+    cursor: pointer;
+    font-style: oblique;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+      /* font-weight: 600;*/
+    /*    text-transform: uppercase;*/
+   /* justify-content: center;
+   /* margin-left: 600px;
+    margin-right: 600px;*/
+}   
+
+.app-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-app:hover {
+    background-color: rgb(203, 200, 16);
+    color: #063044;
 }
 
 
