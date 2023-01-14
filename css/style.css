@@ -587,9 +587,9 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 justify-content: right;*/
 
-.container-adicionales {
+/*.container-adicionales {
     background-color: rgb(32, 179, 166);
-}
+}*/
 
 
 .texto-up {
@@ -694,15 +694,20 @@ justify-content: right;*/
     background-repeat: no-repeat;
     background-size: cover;*/
    /* background-color: rgba(211, 196, 24, 0.44);*/
-   background-color: black;
-    height: 250px;
+  background-color: rgb(5, 5, 5);
+    height: 100%;
     font-family: var(--font-family);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
 
+}
+
+.container-redes {
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-redes a:hover {
@@ -710,7 +715,7 @@ justify-content: right;*/
 }
 
 .logo-redes img {
-    width: 150px;
+    width: 120px;
 }
 
 .compania ul {
@@ -718,22 +723,24 @@ justify-content: right;*/
     
 }
 
-.comunidades ul {
-    display: inline;
+.compania a {
+    color: rgb(255, 255, 255);
+}
+
+.compania {
+    margin-bottom: 25px;
 }
 
 .enlaces ul {
     display: inline;
 }
-/*.container-redes {
-    font-family: var(--font-family);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-top: 60px;
 
-}*/
+.enlaces a {
+    color: rgb(255, 255, 255);
+}
+
 .titulos-final {
-    color: grey;
+    color: rgb(121, 100, 17);
 }
 
 .nav-network ul {
@@ -741,6 +748,8 @@ justify-content: right;*/
     grid-template-columns: 1fr 1fr 1fr;
     
 }
+
+
 
 .btn-4 {
     background-color: rgb(9, 97, 141);
@@ -756,7 +765,7 @@ justify-content: right;*/
 }
 
 .btn-4:hover {
-    background-color: #fff;
+    background-color: rgb(245, 229, 11);
     color: rgb(10, 102, 177);
 }
 
@@ -767,7 +776,7 @@ justify-content: right;*/
 }
 
 .nav-network ul {
-    margin-left: 55px;
+    margin-left: 155px;
     margin-right: 55px;
 }
 
@@ -985,6 +994,10 @@ justify-content: right;*/
 
 }
 
+.app-img img {
+    width: 120px;
+}
+
 .btn-app {
     display: block;
     width: 150px;
@@ -1016,10 +1029,55 @@ justify-content: right;*/
     color: #063044;
 }
 
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
+   /* display: inline;*/
+    /*    grid-template-columns: 1fr;*/
+      /*  padding-top: 20px;*/
+       /* padding: 0;*/
+        padding: 35px;
+    /*justify-content: center;*/
+}
 
+.logo-redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.container-redes {
+    display: inline;
+   /* justify-content: center;*/
+}
 
+.nav-network ul {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
 
+.container-redes {
+    margin: 50px;
+    display: inline;
+}
+
+.titulos-final {
+    text-align: center;
+}
+
+.compania ul {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.enlaces ul {
+    text-align: center;
+    font-family: sans-serif;
+}
 
 }
