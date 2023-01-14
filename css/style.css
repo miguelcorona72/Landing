@@ -47,13 +47,6 @@ header nav {
     animation: fanimado 10s infinite;
 }
 
-/*nav div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}*/
-
 nav div {
     align-items: center;
 }
@@ -128,8 +121,6 @@ ul a {
     padding: 20px;      
     /*position: relative;*/
 }
-
-
 
 .title {
   /*  display: flex;
@@ -559,39 +550,6 @@ font-size: 22px;
 margin-bottom: 20px;
 }
 
-/*.container-adicionales {
-    background-image: url("../assets/mercury1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-   background-color: rgba(211, 196, 24, 0.44);
-   padding-bottom: 700px;
-    text-align: center;
-}*/
-
-/*.app-content .texto-up {
-    color: white;
-    text-align: center;
-}*/
-
-/* Seccion Informacion Adicional */
-
-/*.app-content {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    text-align: center;
-}
-
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-justify-content: right;*/
-
-/*.container-adicionales {
-    background-color: rgb(32, 179, 166);
-}*/
-
-
 .texto-up {
     text-align: center;
     font-size: 35px;
@@ -675,20 +633,7 @@ justify-content: right;*/
     animation: fanimado 10s infinite;
     padding: 40px 0;
 }
-/*.app-container > .btn-app {
-    /* position: absolute;*/
-   /*  top: 0.5px;*/
-/*     right: 70px;
-     height: 36px;*/
-     /*border-radius: 0 10px 10px 0;
-     border-radius: 10px;
-}*/
 
-
-
-/*.app-imp img {
-    justify-content: center;
-}*/
 #redes-sociales {
  /*   background-image: url("../assets/mercury.png");
     background-repeat: no-repeat;
@@ -702,7 +647,6 @@ justify-content: right;*/
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
-
 }
 
 .container-redes {
@@ -745,11 +689,8 @@ justify-content: right;*/
 
 .nav-network ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;   
 }
-
-
 
 .btn-4 {
     background-color: rgb(9, 97, 141);
@@ -816,7 +757,6 @@ justify-content: right;*/
     height: 400px;
     margin-top: 20px;
 }
-
 
 .empresa-inicio {
     display: inline;
@@ -916,7 +856,6 @@ justify-content: right;*/
     font-size: 20px;
 }
 
-
 #productos {
     display: flex;
     justify-content: center;
@@ -932,16 +871,6 @@ justify-content: right;*/
 .card {
     margin: 40px 80px;
 }
-/*.container-productos {
-   display: inline;
-     margin: 0;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-  flex-direction: row;
-    
-
-}*/
 
 .card .card-carrete img {
     width: 150px;
@@ -957,25 +886,10 @@ justify-content: right;*/
     width: 150px;
     padding-top: 20px;
 }
-/*.container-productos .card {
-    align-items: center;
-    justify-self: center;
-
-}*/
-
-/*.card {
-    width: 100%;*/
-/*    margin-bottom: 100px;*/
-   /* display: flex;*/
-
-   /* margin-left: 120px;
-    margin-right: 160px;*/
 
 .card .articulo {
     font-size: 18px;
 }
-
-
 
 .texto-up {
     font-size: 25px;
